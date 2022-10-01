@@ -3,7 +3,7 @@ import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io"
 import Table from './Table'
 import './tables.css'
 
-function TablesCombiner() {
+function TablesCombine() {
     const [top, setTop] = useState(false)
     const [middle, setMiddle] = useState(false)
     const [bottom, setBottom] = useState(false)
@@ -19,13 +19,11 @@ function TablesCombiner() {
                 <div className='displayedTable' >
                     <Table />
                 </div>
-                {
-                    top && (
+                {top && (
                         <div >
                             <Table />
                         </div>
-                    )
-                }
+                    )}
             </div>
             <div className='eachTBL'>
                 <div className='subDiv'>
@@ -37,13 +35,11 @@ function TablesCombiner() {
                 <div className='displayedTable' >
                     <Table />
                 </div>
-                {
-                    middle && (
+                {middle && (
                         <div >
                             <Table />
                         </div>
-                    )
-                }
+                    )}
             </div>
             <div className='eachTBL'>
                 <div className='subDiv'>
@@ -55,16 +51,14 @@ function TablesCombiner() {
                 <div className='displayedTable' >
                     <Table />
                 </div>
-                {
-                    bottom && (
+                {bottom && (
                         <div >
                             <Table />
                         </div>
-                    )
-                }
+                    )}
             </div>
         </div>
     )
 }
 
-export default TablesCombiner
+export default TablesCombine

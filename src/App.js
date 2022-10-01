@@ -5,7 +5,7 @@ import Nav from './Nav';
 
 function App() {
   return (
-    // I am use react router for routeing nessery page from navbar 
+    // I am use react router for routing required page from navbar 
     // In this case the count of pages is one and all links have to route the same page
     <Router>
       <div className="App">

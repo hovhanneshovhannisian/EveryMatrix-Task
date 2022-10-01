@@ -33,22 +33,7 @@ function DoughnutChart() {
       }
     ],
   }
-
-  // const centerText = {
-  //   id: 'centerText',
-  //   afterDatasetsDraw(chart,args, pliginOptions) {
-  //     const {ctx} = chart;
-  //     ctx.textAlign = 'center'
-  //     // ctx.text.Baseline = 'middle'
-  //     ctx.font = 'bold 26px'
-  //     const text = "50"
-  //     const textWidth = ctx.measureText(text).textWidth
-  //     const x = chart.getDatasetsMeta(0).data[0].x
-  //     const y = chart.getDatasetsMeta(0).data[0].y
-  //     ctx.fillText(text, x, y)
-  //   }
-  // }
-
+  
   return (
     <div className='doughnut'>
       <h3>Active Medias</h3>

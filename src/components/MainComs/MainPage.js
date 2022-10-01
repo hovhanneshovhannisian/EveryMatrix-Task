@@ -2,7 +2,7 @@ import React from 'react'
 import Charts from '../DiagramCom/Charts';
 import GeneralInfo from './GeneralInfo';
 import Header from './Header';
-import TablesCombiner from './TablesCombiner';
+import TablesCombine from './TablesCombine';
 
 function MainPage() {
     return (
@@ -10,8 +10,7 @@ function MainPage() {
             <Header />
             <GeneralInfo />
             <Charts />
-            <TablesCombiner />
-            {/* <div style={{height: '600px', width: '600px'}}></div> */}
+            <TablesCombine />
         </div>
     )
 }
