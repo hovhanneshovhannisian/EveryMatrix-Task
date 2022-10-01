@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.asideNav {
+    height: 100vh;
+    display: flex;
+    background-color: hsl(0, 0%, 9%);
+    position: relative;
+}
+
+.asideNav .navList {
+    list-style: none;
+    margin: 0;
+    padding: 1px 15px;
+    background-color: #222222;
+}
+
+.asideNav .navList li {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.asideNav .underNav {
+    list-style: none;
+    background-color: #171717;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.asideNav .underNav li {
+    color: #878787;
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.navOpener {
+    display: flex;
+}
+
+.navOpener button {
+    position: absolute;
+    left: 59px;
+    top: 62px;
+    width: 21px;
+    height: 33px;
+    background-color: #222222;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 0;
+}
+
+.logo img {
+    width: 55px;
+
+}
+
+.openedNav {
+    background-color: #171717;
+    height: 100vh;
+    width: 200px;
+    z-index: 15;
+    position: absolute;
+    left: 60px
+}
+
+.openedNav h2 {
+    color: white;
+    font-size: 16px;
+}
+
+.openedNav ul {
+    list-style: none;
+    padding: 0 10px;
+    margin: 40px 0;
+}
+
+.openedNav ul li {
+    color: white;
+    cursor: pointer;
+    margin: 26px 0;
+}
+
+.openedNav button {
+    position: absolute;
+    left: 200px;
+    top: 62px;
+    width: 21px;
+    height: 33px;
+    background-color: #222222;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: #878787;
+    font-size: 20px;
+    padding: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}

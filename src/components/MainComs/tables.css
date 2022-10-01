@@ -1,0 +1,83 @@
+.tables {
+    display: grid;
+    grid: 100% / auto auto auto;
+}
+
+.eachTBL .subDiv{
+    display: flex;
+    justify-content: space-between;
+    background-color: #353535;
+    border: 1px solid #d4d4d4;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.eachTBL .subDiv h2 {
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-weight: 400;
+}
+
+.displayed-btn{
+    display:none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 26px;
+}
+
+.tableDiv table {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+}
+
+.tableDiv table tr {
+    width: 100%;
+}
+.tableDiv table tr td{
+    color: #636363;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+/* Medias */
+
+@media screen and (max-width: 767px) {
+    .tables {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .eachTBL {
+        width: 100%;
+    }
+
+    .displayed-btn{
+        display: block;
+    }
+    .displayedTable{
+        display: none;
+    }
+
+    .tableDiv table {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .eachTBL {
+        width: 100%;
+    }
+    .tables {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+

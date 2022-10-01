@@ -1,0 +1,136 @@
+.chartLayout {
+    display: flex;
+    background-color: #2a2a2a;
+    width: 100%;
+}
+
+.linerchart {
+    width: 600px;
+    height: 400px;
+    padding: 0 15px;
+    background-color: #2a2a2a;
+}
+
+.geochart {
+    width: 550px;
+    height: 400px;
+    padding: 0 15px;
+    background-color: #2a2a2a;
+}
+
+.geochart table {
+    color: white;
+    margin-top: 70px;
+    font-size: 20px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.linerchart .chart {
+    height: 325px;
+}
+
+.titleandselect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: White;
+}
+
+.titleandselect select {
+    height: 30px;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.titleandselect select option {
+    color: black;
+}
+
+.doughnut {
+    width: 350px;
+    padding: 0 20px 20px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.doughnut .chart {
+    width: 150px;
+
+}
+
+.doughnut table tr {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.underMap {
+    display: block;
+}
+
+.underMap select {
+    float: right;
+    font-size: 20px;
+    height: 50px;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+.underMap select option {
+    color: black;
+}
+
+/* Medias */
+@media screen and (max-width: 767px) {
+    .chartLayout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linerchart {
+        width: 100%;
+    }
+
+    .geochart {
+        width: 100%;
+
+    }
+
+    .doughnut {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .chartLayout {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .geochart table {
+        color: white;
+        margin-top: 70px;
+        font-size: 15px;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .linerchart {
+        width: 100%;
+    }
+    .geochart {
+        width: 50%;
+
+    }
+    .doughnut {
+        width: 50%;
+    }
+
+}

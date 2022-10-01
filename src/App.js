@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import MainPage from './components/MainComs/MainPage';
+import Nav from './Nav';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // I am use react router for routeing nessery page from navbar 
+    // In this case the count of pages is one and all links have to route the same page
+    <Router>
+      <div className="App">
+        <Nav />
+        <main>
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
